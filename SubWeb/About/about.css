@@ -1,0 +1,174 @@
+/* "font-family: 'brandon-grotesque', sans-serif;" */
+@import url("https://use.typekit.net/tjr1rjp.css");
+
+/* "font-family: 'Montserrat', sans-serif;" */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+}
+
+
+footer {
+    font-size: 10px;
+    font-weight: 100;
+}
+/* Justin: https://www.w3schools.com/howto/howto_js_sidenav.asp */
+
+#header {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    font-family: brandon-grotesque,sans-serif;
+    background-color: #47bf93;
+    max-width: 100%;
+    text-decoration: none;
+}
+
+
+#header_logo{
+    width: 20%;
+    height: 30%;
+    
+}
+
+#header_menu{
+    display: none;
+}
+
+/* dropDown Menu */
+.dropdown{
+    display: none;
+    font-size: 25px;
+    list-style: none;
+    box-shadow: 400px;
+    text-decoration: none;
+    position: fixed;
+    left: 0px;
+    background: wheat;
+    width: 100%;
+}
+
+
+.dropdown.show{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#header_search{
+    width: 5%;
+    display: none;
+}
+
+
+.nav_links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.nav_links ul li {
+    margin: 20px;
+    margin-left: 20px;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.nav_links ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+@media(max-width: 500px){
+    
+    #header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    }
+    
+    #header_menu{
+        display: unset;
+        width: 25px;
+        margin-left: 8px;
+    }
+
+   
+    #header_logo{
+        margin-left: 80px;
+        width: 50%;
+    
+    }
+
+    #header_search{
+        width: 25px;
+        display: inherit;
+        margin-right: 8px;
+    }
+
+    .nav_links ul {
+        display: none;
+        
+    }
+    
+    #About_title{
+        font-size:10px;
+        margin-top: 20px;
+        margin-bottom:20px;
+    }
+    #About_State{
+        padding: 20px;
+        border: black ridge 2px;
+        font-size: 15px;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: normal;
+    }
+}
+
+.About{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.About1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+#About_title{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size:50px;
+    text-decoration: underline ;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: normal;
+}
+
+#About_State{
+    padding: 20px;
+    border: black ridge 2px;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: normal;
+}
+
+.contact {
+    background-color: #47bf93;
+}
+
+html {
+    scroll-behavior: smooth;
+}

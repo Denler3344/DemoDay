@@ -1,0 +1,26 @@
+#post {
+    margin: auto;
+}
+
+
+#post div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgb(49, 49, 49);
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+}
+
+#post p{
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Day</title>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script> -->
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-analytics.js"></script> -->
+
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyDFvHOo-wrB8KPh-uAcv0gNIX0peJAB8uI",
+            authDomain: "demoday-2b7fa.firebaseapp.com",
+            projectId: "demoday-2b7fa",
+            storageBucket: "demoday-2b7fa.appspot.com",
+            messagingSenderId: "449962670964",
+            appId: "1:449962670964:web:cd88ebd2b3dc37c4b80a21",
+            measurementId: "G-YSLHPJX3LL"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="./assets/index.js" defer></script>
+    <script src="./assets/script.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <section id="header"> 
+        <a href="#"><img src="images/menu.png" id="header_menu"><a>
+
+        <a href="./index.html"><img src="images/Student_Finance-black.png" id="header_logo"><a>
+
+        <div class="nav_links">
+            <ul>
+                <li><a href="./SubWeb/About/About.html">About Us</a></li>
+                <li><a href="#contact_container">Contact</a></li>
+            </ul>
+        </div>
+        <a href="#"><img src="images/search.png" id="header_search"><a>
+    </section>
+    
+    <section class="dropdown">
+            <a href="./SubWeb/About/About.html">About us</a>
+            <a href="#contact_container">Contact</a>
+    </section>
+
+    <div class="webDesc">
+        <div class="column1">
+            <div class="Desctxt">
+                <h1>Assisting Students in Personal Finance & Pathways to College</h1>
+                <p id="descParag">Provides an environment for students to share information and gain information, tips and experiences regarding to personal finance.</p>    
+            </div>
+            <div class="DescBtns">
+                <button type="button" id="giveAdvicebtn"><a href="#content"><b>Give</b> Advice</a></button>
+                <button type="button" id="getAdvicebtn"><a href="#container"><b>Receive</b> Advice</a></button>
+            </div>
+        </div>
+        <div id="Desc-hero">
+            <img src="./images/hero-image.png" class="responsive"> 
+        </div>
+    </div>
+
+<section id = "content">
+    
+    <div id="createLayout">
+        <div class="headerTxt">
+            <h1>Give Advice</h1>
+        </div>
+        <div class="create-post">
+            <h3>Post Your Advice</h3>
+            <input type="text" id="title" placeholder="Add a Title" required>
+            <textarea id="message" row="4" cols="50" placeholder="Enter Your Advice" required></textarea>
+            <input type="text" id="name" placeholder="Enter Your Name" required>
+            <button id="Post">Post</button>
+        </div>
+    </div>
+
+    <div class="student-advice">
+        <div class="headerTxt2">
+            <h1>Student Advice</h1>
+        </div>
+        <div id="container">
+
+        </div>
+    </div>
+    
+</section>
+    <br>
+    <hr class="contact">
+
+
+    <section id="contact_container" class="contact">
+        <div>
+            <h1 id="email">Contact Us</h1>
+            <br>
+            <p>Email: studentfinance23@gmail.com</p>
+            <br>
+            <p>Phone Number: (800) 888 - 8888</p>
+        </div>
+    </section>
+    
+    <footer  class="contact">
+        <br>
+        <p id="credit">website made by: Daniel, Justin, Elijah<br><i>&copy; 2021 | All right reserved StudentFinace</i></p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,398 @@
+
+/* "font-family: 'brandon-grotesque', sans-serif;" */
+@import url("https://use.typekit.net/tjr1rjp.css");
+
+/* "font-family: 'Montserrat', sans-serif;" */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+}
+
+
+footer {
+    font-size: 10px;
+    font-weight: 100;
+}
+/* Justin: https://www.w3schools.com/howto/howto_js_sidenav.asp */
+
+#header {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    font-family: brandon-grotesque ,sans-serif;
+    background-color: #47bf93;
+    max-width: 100%;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 3    0px;
+}
+
+
+#header_logo{
+    width: 20%;
+    height: 30%;    
+}
+
+#header_menu{
+    display: none;
+}
+
+/* dropDown Menu */
+.dropdown{
+    display: none;
+    font-size: 25px;
+    list-style: none;
+    box-shadow: 400px;
+    text-decoration: none;
+    position: fixed;
+    left: 0px;
+    background: wheat;
+    width: 100%;
+}
+
+
+.dropdown.show{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#header_search{
+    width: 5%;
+    display: none;
+}
+
+
+.nav_links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.nav_links ul li {
+    margin: 20px;
+    margin-left: 20px;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.nav_links ul li a {
+    text-decoration: none;
+    color: black;
+    scroll-behavior: smooth;
+
+}
+
+#content{
+    min-height: 700px;
+}
+
+#container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(49, 49, 49);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+    width: 750px;
+}
+
+@media(max-width: 760px) {
+    #container div {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: auto;
+    }
+}
+
+.create-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    height: auto;
+    width: 425px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 70px;
+}
+
+#createLayout {
+    background-color: rgb(243, 243 ,243);
+    background-image: url("../images/icon-pattern.png");
+    background-repeat: repeat;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.headerTxt {
+    font-family: 'brandon-grotesque', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(58, 58, 58);
+    font-size: 1.75em;
+    padding-bottom: 50px;
+}
+
+.headerTxt2 {
+    font-family: 'brandon-grotesque', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(58, 58, 58);
+    font-size: 1.75em;
+    padding-top: 80px;
+}
+
+.webDesc {
+    display: flex;
+    flex-direction: row;
+    background-color: #47bf93;
+    padding-top: 30px;
+    font-family: 'brandon-grotesque', sans-serif;
+}
+
+.webDesc button {
+    width: 200px;
+    height: 50px;
+    margin-bottom: 50px;
+    border: 0;
+    border-radius: 30px;
+    font-size: 1em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    font-family: 'brandon-grotesque', sans-serif;
+    text-transform: uppercase;
+}
+
+#giveAdvicebtn {
+    margin-top: 40px;
+    background-color: rgb(27, 27, 27);
+    transition: background-color 0.5s ease-in-out;
+}
+
+#getAdvicebtn {
+    margin-left: 50px;
+    background-color: rgb(27, 27, 27);;
+    transition: background-color 0.5s ease-in-out;
+}
+
+#getAdvicebtn a {
+    color: white;
+}
+
+#giveAdvicebtn a {
+    color: white;
+}
+
+#giveAdvicebtn:hover {
+    background-color: #2d795d;
+}
+
+#getAdvicebtn:hover {
+    background-color: #2d795d;
+}
+
+.webDesc h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+#descParag {
+    margin: 40px;
+    font-size: 1.25em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.column1 {
+    padding: 40px;
+}
+
+@media(max-width: 550px){
+
+    .create-post {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        height: auto;
+        width: auto;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 50px;
+        margin-top: 50px;
+    }
+
+    #getAdvicebtn {
+        margin-left: 0;
+        background-color: rgb(27, 27, 27);;
+        transition: background-color 0.5s ease-in-out;
+    }
+
+    .webDesc h1 {
+        font-size: 2em;
+        text-transform: uppercase;
+    }
+
+    #descParag {
+        display: none;
+    }
+
+    #header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+
+    }
+    
+    #header_menu{
+        display: unset;
+        width: 25px;
+        margin-left: 8px;
+    }
+
+   
+    #header_logo{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    
+    }
+
+    #header_search{
+        width: 25px;
+        display: inherit;
+        margin-right: 8px;
+    }
+
+    .nav_links ul {
+        display: none;
+        
+    }
+    
+}
+
+.create-post h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: -10px;
+    padding-bottom: 10px;
+    color: rgb(15, 141, 115);
+}
+
+.create-post input, textarea{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    padding: 10px;
+    padding-left: 25px;
+    border: 2px solid rgb(184, 184, 184);
+    border-radius: 20px;
+}
+
+.create-post button {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+    width: 90px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 2px solid rgb(184, 184, 184);
+    border-radius: 20px;
+    background-color: rgb(230, 230, 230);
+    transition: background-color 0.5s ease-in-out;
+    transition: border 0.5s ease-in-out;
+}
+
+.create-post button:hover {
+    background-color: rgb(210, 210, 210);
+    border: 2px solid rgb(102, 102, 102);
+}
+
+#container {
+    margin: auto;
+}
+
+
+#container p{
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.BlogName {
+    margin-top: 25px;    
+}
+
+.BlogTitle {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.BlogMessage {
+    font-size: 0.75em;
+    letter-spacing: 0.125em;
+    line-height: 1.65;
+}
+
+.contact {
+    background-color: #47bf93;
+}
+
+.responsive {
+    width: auto;
+    height: auto;
+    max-width: 500px;
+}
+
+@media(max-width: 1024px) {
+    .responsive {
+        display: none;
+    }
+
+    .column1 {
+        text-align: center;
+        background-image: url("../images/hero-image-icon.png");
+        background-repeat: repeat;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.contact { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: center #47bf93;
+    
+}
+
+.contact #email{
+    font-family:'Montserrat', sans-serif; 
+    color: white;
+}
+
+.contact p{
+    color: white;
+    font-size: 11.5pt;
+}
